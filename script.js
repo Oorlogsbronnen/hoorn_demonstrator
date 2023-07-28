@@ -45,7 +45,14 @@ document.getElementById("hoorn").addEventListener("change", function (event) {
             var description = dataPoint["Column 1 http://purl.org/dc/elements/1.1/description"];
             var thumbnailUrl = dataPoint["Column 1 http://schema.org/thumbnail"];
             var sourceUrl = dataPoint["Column 1 http://purl.org/dc/elements/1.1/source"];
+            var baseUrl = "https://www.oorlogsbronnen.nl/bron/";
 
+            // Encode the original URL to use it as a part of the new URL
+            var encodedUrl = encodeURIComponent(sourceUrl);
+
+            // Combine the base URL and the encoded URL to get the final URL
+            var adaptedUrl = baseUrl + encodedUrl;
+            
             // Create a unique identifier for the marker location
             var locationIdentifier = latitude + "|" + longitude;
 
