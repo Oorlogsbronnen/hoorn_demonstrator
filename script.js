@@ -72,7 +72,7 @@ document.getElementById("hoorn").addEventListener("change", function (event) {
             popupContent += `<div class="popup-street-name">${streetName}</div>`;
             popupContent += `<strong>${title}</strong><br>${description}`;
             popupContent += `<br><img src="${thumbnailUrl}" alt="${title}" style="max-width: 100px;">`;
-            popupContent += `<br><a href="${sourceUrl}" target="_blank">More Info</a>`;
+            popupContent += `<br><a href="${adaptedUrl}" target="_blank">More Info</a>`;
             popupContent += `</div>`;
             marker.bindPopup(popupContent, { autoPan: true });
             markerClusterGroup.addLayer(marker);
