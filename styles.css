@@ -1,5 +1,5 @@
 #map { 
-    height: 100vh; 
+    height: 90vh; 
 }
 
 .container {
@@ -7,3 +7,24 @@
     flex-direction: column;
 }
 
+.leaflet-popup-content-wrapper {
+    max-height: 200px; /* Set the maximum height of the popup */
+    overflow-y: auto; /* Enable vertical scrolling when content overflows */
+}
+
+.popup-scrollable-content {
+    padding: 10px; /* Add padding to the scrollable content to improve appearance */
+}
+
+.popup-street-name {
+    font-size: 18px; /* Increase the font size for the street name */
+    text-align: center; /* Center the street name within the popup */
+    margin-bottom: 10px; /* Add some margin at the bottom of the street name */
+    font-weight: bolder;
+}
+
+.custom-icon {
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+  }
